@@ -9,7 +9,6 @@ center: [14.559341823522049, 63.19140339833968], // starting position [lng, lat]
 zoom: 3 // starting zoom
 });
 
-map.flyTo({center: [0, 0], zoom: 9});
 // using flyTo options
 map.flyTo({
 center: [14.559341823522049, 63.19140339833968],
