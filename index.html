@@ -1,0 +1,54 @@
+<!-- dit beschrijft dat ik in html-5 werk -->
+<!DOCTYPE html>
+<!-- Dit zegt iets over de taal van de website, namelijk Nederlands -->
+<html lang="nl">
+
+    <!-- In de head sectie staat relevantie informatie die voor het gehele document geldt, zoals de titel, externe bestanden en de gebruikte tekenset -->
+    <head>
+        <!-- textset utf-8 wordt gebruikt -->
+		<meta charset="utf-8">
+        <!-- Viewport is het totale browserscherm dat getoond wordt -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- linkje naar externe css voor opmaak van het document -->
+		<link rel="stylesheet" href="styles.css">
+         <!-- Linkje naar externe JavaScript voor de interactie van het document. Defer zorgt ervoor dat de code pas geladen wordt als al het andere al geladen is -->
+		<script src="main.js" defer></script>
+
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+
+
+
+
+        <!-- Dit geeft een klein favicoontje bovenin de browser weer :) -->
+        <link rel="shortcut icon" type="image/svg" href="images/rocket.svg"/>
+        <!-- Titel van deze website -->
+		<title>Terugreis Aarde</title>
+	</head>
+
+	<!-- In de body staat de header en de visuele data -->
+    <body>
+        <!-- In de header staat een sticky bar met het logo van SpaceX -->
+        <header>
+            <!-- Dit is de foto van het logo van SpaceX met een alternatieve tekst voor bijv. slechtzienden -->
+            <img src="images/SpaceXlogo.svg" alt="Logo van SpaceX met de tekst Space X in het wit met een paarse x. Daaronder staat in het paars het woord dashboard. SpaceX Dashboard." />
+        </header>
+        <!-- In de main staat het belangrijkste, namelijk de API's -->
+        <main>
+            <article id="wrapper">
+                <article id="wrapperMap">
+                    <div id="map"></div>
+                </article>
+                <article id="wrapperData">
+                    <div id="data">
+                        <span id="countryWrapper">
+                            <span id="flag"></span>
+                            <h2 id="titleCountry">Landingsplaats: <span id="country"></span></h2>
+                        </span>
+                        <p>De taal die je moet spreken is <span id="language">???</span></p>
+                    </div>
+                </article>
+            </article>
+        </main>
+	</body>
+</html>

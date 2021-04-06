@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="134.155" height="38.535" viewBox="0 0 134.155 38.535">
+  <g id="Group_187" data-name="Group 187" transform="translate(-655.852 -14.465)">
+    <g id="Group_19" data-name="Group 19" transform="translate(655.852 14.465)">
+      <path id="Path_301" data-name="Path 301" d="M103.792,33.242H92.464l-.4.324V43.64h3.115v-3.8l.283-.283h8.334c2.1,0,3.075-.566,3.075-2.023V35.224c0-1.416-.971-1.982-3.075-1.982m0,3.722c0,.688-.445.809-1.457.809H95.5l-.324-.283V35.346l.283-.283h6.878c.971,0,1.457.121,1.457.809v1.092Z" transform="translate(-72.519 -27.133)" fill="#fff"/>
+      <path id="Path_302" data-name="Path 302" d="M155.411,34.81l2.711,3.965-.162.364h-5.988l-1.537,1.9h8.9l.647.364,1.376,1.9h3.6L157.07,32.787" transform="translate(-115.319 -26.8)" fill="#fff"/>
+      <path id="Path_303" data-name="Path 303" d="M294.188,51.177V48.345l.324-.283h6.028v-1.78h-9.548V53.2h14.079V51.42H294.552" transform="translate(-218.372 -36.694)" fill="#fff"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="14.2" height="1.942" transform="translate(72.62 6.109)" fill="#fff"/>
+      <path id="Path_304" data-name="Path 304" d="M222.035,35.1h11.449c-.162-1.457-1.092-1.861-3.358-1.861h-8.213c-2.589,0-3.4.486-3.4,2.468v5.5c0,1.942.809,2.468,3.4,2.468h8.213c2.306,0,3.2-.445,3.277-1.942H222.035l-.324-.324V35.346" transform="translate(-165.233 -27.133)" fill="#fff"/>
+      <path id="Path_305" data-name="Path 305" d="M30.679,37.177H22.385l-.243-.283v-1.78l.243-.2H33.592l.162-.364c-.364-.971-1.375-1.456-3.2-1.456H22.749c-2.589,0-3.4.485-3.4,2.468v1.173c0,1.942.809,2.468,3.4,2.468h8.294l.243.243V41.3l-.2.283H19.108s-.283.162-.283.2c.2,1.375,1.133,1.74,3.358,1.74h8.5c2.589,0,3.439-.486,3.439-2.468V39.645c0-1.942-.85-2.468-3.439-2.468" transform="translate(-18.825 -27.022)" fill="#fff"/>
+      <path id="Path_306" data-name="Path 306" d="M364.159,33.091h-4.693l-.243.485,5.178,3.8c.971-.566,2.063-1.133,3.2-1.7" transform="translate(-268.397 -27.022)" fill="#fff"/>
+      <path id="Path_307" data-name="Path 307" d="M393.49,54l4.572,3.317h4.693l.2-.445-6.8-4.976c-.89.688-1.821,1.375-2.67,2.1" transform="translate(-293.521 -40.807)" fill="#fff"/>
+      <path id="Path_308" data-name="Path 308" d="M362.47,26.853h-4.248l-.364-.566a49.287,49.287,0,0,1,14.2-9.376c6.719-3.084,16.469-5.979,29.5-6.564,0,0-23.425.809-39.081,16.506" transform="translate(-267.397 -10.347)" fill="#c04ffa"/>
+    </g>
+    <text id="digital_clock" data-name="digital clock" transform="translate(656 49)" fill="#b558f6" font-size="16" font-family="AktivGroteskCorp-Regular, Aktiv Grotesk Corp" letter-spacing="0.12em"><tspan x="0" y="0">digital clock</tspan></text>
+  </g>
+</svg>

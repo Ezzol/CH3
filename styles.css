@@ -1,0 +1,93 @@
+/* ------------------------------------------------------------------- */
+/* ----------------------main & header properties--------------------- */
+/* ------------------------------------------------------------------- */
+
+/* De opmaak van alles in de html en body */
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* De opmaak van de header van de pagina */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 60px;
+    top: 0;
+    background-color: #141A28;
+    border-bottom: 2px solid #C04FFA;
+    /* z-index: 2; */
+}
+
+/* De hoogte van het logo in de header */
+header img{
+    height: 40px;
+}
+
+/* de opmaak, vooral van de achtergrond, van de body */
+body{
+    background-image: url("images/BGimage.svg");
+    background-repeat: no-repeat;
+    background-color: #141A28;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+}
+
+h4{
+    color: black;
+}
+
+/* ------------------------------------------------------------------- */
+/* ----------------------main content properties---------------------- */
+/* ------------------------------------------------------------------- */
+
+#wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+#wrapperMap{
+    width: calc(70% - 20px);
+}
+
+#wrapperData{
+    width: calc(30% - 40px);
+    background-color: #1E2B3F;
+    border-radius: 8px;
+}
+
+#map{
+    height: 60vh;
+    border-radius: 8px;
+}
+
+#data{
+    padding: 0 20px;
+}
+
+#countryWrapper{
+    display: flex;
+    align-items: center;
+}
+
+#flag{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    /* background-color: blue; */
+    background-repeat: no-repeat;
+    background-size: 30px 20px;
+}
+
+#titleCountry{
+    display: inline-block;
+    padding-left: 10px;
+}
