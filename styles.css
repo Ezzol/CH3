@@ -19,7 +19,7 @@ header{
     top: 0;
     background-color: #141A28;
     border-bottom: 2px solid #C04FFA;
-    /* z-index: 2; */
+    z-index: 2;
 }
 
 /* De hoogte van het logo in de header */
@@ -38,56 +38,160 @@ body{
     min-height: 100vh;
 }
 
+/* De opmaak voor de H1 die als titel geldt voor het blok */
+h1{
+    font-size: 1.2em;
+}
+
+/* Aparte opmaak voor H4 die in de popup van de map staat */
 h4{
     color: #000;
+}
+
+/* De paragraph tekst iets kleiner dan gemiddeld op mobile */
+p{
+    margin-top: 0;
+    line-height: 1.8;
+    font-size: 0.8em;
 }
 
 /* ------------------------------------------------------------------- */
 /* ----------------------main content properties---------------------- */
 /* ------------------------------------------------------------------- */
 
+/* De main heeft een marge aan de zijkanten van 20px */
+main{
+    margin: 0 20px;
+}
+
+/* De wrapper om alle content in de main */
 #wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
     margin-top: 20px;
 }
 
+/* Een wrapper om de map heen om de breedte mee te geven */
 #wrapperMap{
-    width: calc(70% - 20px);
+    width: 100%;
+    margin: 20px 0;
 }
 
-#wrapperData{
-    width: calc(30% - 40px);
-    background-color: #1E2B3F;
-    border-radius: 8px;
-}
-
+/* De opmaak van de map */
 #map{
     height: 60vh;
     border-radius: 8px;
 }
 
-#data{
+/* De wrapper van de data over het land */
+#wrapperData{
+    width: 100%;
+    background-color: #1E2B3F;
+    border-radius: 8px;
     padding: 0 20px;
 }
 
+/* Deze wrapper zet de vlag en het land naast elkaar in een wrapper */
 #countryWrapper{
     display: flex;
     align-items: center;
 }
 
+/* De opmaak van de vlag */
 #flag{
     display: inline-block;
     width: 30px;
     height: 20px;
-    /* background-color: blue; */
     background-repeat: no-repeat;
     background-size: 30px 20px;
 }
 
+/* De titel van het land */
 #titleCountry{
     display: inline-block;
     padding-left: 10px;
+}
+
+/* Een aparte kleur voor de taal die in de html komt te staan. Op deze manier valt het meer op */
+#language{
+    color: #C04FFA;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* ---------------------Media Query Mobile liggend-------------------- */
+/* ------------------------------------------------------------------- */
+
+/* brede smartphone/smalle tablet versie */
+@media only screen and (min-width: 600px) {
+    /* De opmaak voor de H1 die als titel geldt voor het blok */
+    h1{
+        font-size: 1.5em;
+    }
+    
+    /* aangepaste font-grootte van de paragrah */
+    p{
+        font-size: 1em;
+    }
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* -------------------------Media Query tablet------------------------ */
+/* ------------------------------------------------------------------- */
+
+/* tablet versie */
+@media only screen and (min-width: 768px) {
+    /* Vanaf de tablet versie zal de boel naast elkaar staan ipv onder elkaar */
+    #wrapper{
+        flex-wrap: nowrap;
+    }
+
+    /* De breedte verandert t.o.v. het kleinste schermformaat */
+    #wrapperMap{
+        width: calc(60% - 30px);
+        padding: 0;
+        margin: 0;
+    }
+
+    /* De breedte verandert t.o.v. het kleinste schermformaat */
+    #wrapperData{
+        width: calc(40% - 30px);
+    }
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* ------------------------Media Query Desktop------------------------ */
+/* ------------------------------------------------------------------- */
+
+/* Desktop versie */
+@media only screen and (min-width: 1200px) {
+    /* De wrapper content staat op de desktopversie weer onder elkaar */
+    #wrapper{
+        flex-wrap: wrap;
+    }
+
+    /* Hierbij verandert de breedte ook weer naar fullwidth */
+    #wrapperMap{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* De breedte is weer 100% */
+    #wrapperData{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Omdat het scherm op een gegeven moment heel breed kan worden, heb ik een margin percentage aan de zijkanten gegeven waarmee hij rekening houdt */
+    main{
+        margin: 0 8%;
+    }
 }

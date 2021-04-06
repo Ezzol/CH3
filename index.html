@@ -18,12 +18,17 @@
         <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
 
 
-
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+        <!-- Promise polyfill script is required -->
+        <!-- to use Mapbox GL Geocoder in IE 11. -->
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 
         <!-- Dit geeft een klein favicoontje bovenin de browser weer :) -->
         <link rel="shortcut icon" type="image/svg" href="images/rocket.svg"/>
         <!-- Titel van deze website -->
-		<title>Terugreis Aarde</title>
+		<title>Back to Earth</title>
 	</head>
 
 	<!-- In de body staat de header en de visuele data -->
@@ -35,18 +40,25 @@
         </header>
         <!-- In de main staat het belangrijkste, namelijk de API's -->
         <main>
+            <!-- Deze wrapper omvat eigenlijk alle data. Is een flexbox -->
             <article id="wrapper">
-                <article id="wrapperMap">
-                    <div id="map"></div>
-                </article>
+                <!-- Deze wrapper bevat de data die uit een API komt -->
                 <article id="wrapperData">
-                    <div id="data">
-                        <span id="countryWrapper">
-                            <span id="flag"></span>
-                            <h2 id="titleCountry">Landingsplaats: <span id="country"></span></h2>
-                        </span>
-                        <p>De taal die je moet spreken is <span id="language">???</span></p>
-                    </div>
+                    <!-- Een span wrapper rondom de vlag en landingslocatie -->
+                    <article id="countryWrapper">
+                        <!-- Deze span bevat de vlag van het land -->
+                        <span id="flag"></span>
+                        <!-- Deze H1 bevat de landingslocatie met land erbij -->
+                        <h1 id="titleCountry">Landing location: <span id="country"></span></h1>
+                    </article>
+                    <!-- Deze paragrafen bevatten de tekst en de gesproken taal in dat land. -->
+                    <p>When you arrive at this location there is a chance people speak in a different languague. Therefore you can find out if you need to learn a new languague. The language the people speak in this country is <span id="language"></span>.</p>
+                    <p>Want to change the landing location? Enter your preferred location in the search bar.</p>
+                </article>
+                <!-- Deze wrapper omvat de map van MapBox -->
+                <article id="wrapperMap">
+                    <!-- Dit is de daadwerkelijke div met de map erin -->
+                    <div id="map"></div>
                 </article>
             </article>
         </main>
