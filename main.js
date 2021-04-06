@@ -40,7 +40,7 @@ var marker = new mapboxgl.Marker({ color: '#C04FFA'})
 .addTo(map);
 
 var searchbar = document.querySelector('.mapboxgl-ctrl-geocoder--input');
-searchbar.addEventListener('change', getSearchResult)
+searchbar.addEventListener('change', getSearchResult);
 
 //Variabelen voor de functie getSearchResults
 var searchTerm;
@@ -48,7 +48,7 @@ var searchCountry;
 
 // In deze functie sla ik de data op en maak ik er een array van. Ik heb met dit stuk echt veel gekloot. Op het internet veel over gevonden. Het geeft in de console nog steeds een error, maar in principe werkt het gewoon. De error komt alleen als je iets anders dan een land in de zoekbalk intikt. Dit heeft te maken met dat de andere API alleen maar land-info weergeeft. Als je dus bijv. een adres of stad intikt krijg je een error, terwijl hij erna wel direct herkent om welk land het gaat & dus werkt het.
 function getSearchResult(e) {
-    searchTerm = e.target.value
+    searchTerm = e.target.value;
     var searchArray = searchTerm.split(', ');
     searchCountry = searchArray[searchArray.length - 1];
     getAPIdata();
