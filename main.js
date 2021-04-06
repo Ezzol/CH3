@@ -16,7 +16,7 @@ center: [14.559341823522049, 63.19140339833968],
 zoom: 12,
 speed: 0.8,
 curve: 1,
-easing(t) {
+easing(t){
 return t;
 }
 });
